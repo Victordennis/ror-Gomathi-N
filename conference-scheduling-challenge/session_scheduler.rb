@@ -15,13 +15,12 @@ class SessionScheduler
   end
 
   def print_unallocated_talks
-    unallocted_talks = (@lightning_talks_list + @long_talks_list).reject { |talk| talk[:scheduled] }
-    return if unallocted_talks.empty?
+    unallocated_talks = (@lightning_talks_list + @long_talks_list).reject { |talk| talk[:scheduled] }
+    return if unallocated_talks.empty?
 
     puts 'Unallocated Talks'
-    puts '=================================================================================================='
-    unallocted_talks.each do |talk|
-      puts "#{talk[:topic]} - #{talk[:duration]} min"
+    unallocated_talks.each do |talk|
+      puts "#{talk[:topic]} #{talk[:duration]} min"
     end
   end
 end

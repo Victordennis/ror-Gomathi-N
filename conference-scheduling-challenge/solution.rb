@@ -24,7 +24,6 @@ RegisteredTalk.new(topic: 'Getting a handle on Legacy Code', duration: 60)
 RegisteredTalk.new(topic: 'Heroku: A year in review', duration: 30)
 RegisteredTalk.new(topic: 'Ansible : An alternative to chef', duration: :lightning_talk)
 RegisteredTalk.new(topic: 'Ruby on Rails on Minitest', duration: 30)
-# RegisteredTalk.new(topic: 'Unallocated', duration: 30)
 
 # Schedule the registered talks
 scheduler = SessionScheduler.new(RegisteredTalk.all_registered_talks)
